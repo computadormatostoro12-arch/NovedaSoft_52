@@ -1,0 +1,458 @@
+/* ==========================================================================
+   PANTALLA DE LOGIN RESPONSIVE - SENA CIDE SOACHA
+   ========================================================================== */
+
+.login-page-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--sena-fondo, #f4f6f8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Banner Header Principal --- */
+.login-header-banner {
+  width: 100%;
+  background: linear-gradient(180deg, #002e47 0%, #004d73 60%, #1e3a8a 100%);
+  padding: 32px 20px 48px 20px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sena-logo-badge {
+  margin-bottom: 12px;
+}
+
+.sena-symbol {
+  width: 42px;
+  height: 42px;
+  background-color: #ffffff;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a3 3 0 100 6 3 3 0 000-6zm-7 8v2h14v-2H5zm2 4v8h3v-6h4v6h3v-8H7z'/%3E%3C/svg%3E") no-repeat center;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a3 3 0 100 6 3 3 0 000-6zm-7 8v2h14v-2H5zm2 4v8h3v-6h4v6h3v-8H7z'/%3E%3C/svg%3E") no-repeat center;
+}
+
+.banner-regional {
+  color: var(--sena-verde, #39a900);
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+/* Título asegurado en blanco puro */
+.banner-title {
+  color: #ffffff ;
+  font-size: var(--text-xl, 1.25rem);
+  font-weight: 800;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+
+
+.banner-sub {
+  color: #e2e8f0;
+  font-size: var(--text-xs, 0.75rem);
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.banner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: var(--text-xs, 0.75rem);
+  color: #bae6fd;
+}
+
+.pill-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: var(--sena-verde, #39a900);
+  border-radius: 50%;
+}
+
+/* --- Wrapper de la Tarjeta --- */
+.login-card-wrapper {
+  width: 100%;
+  max-width: 440px;
+  padding: 0 16px 40px 16px;
+  margin-top: -24px;
+  box-sizing: border-box;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Sede Badge */
+.sede-info-box {
+  background-color: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sede-details h4 {
+  font-size: var(--text-sm, 0.875rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.sede-details p {
+  font-size: var(--text-xs, 0.75rem);
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+.sede-status {
+  background-color: #f0fdf4;
+  color: #166534;
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #bbf7d0;
+}
+
+.status-dot {
+  color: var(--sena-verde, #39a900);
+  font-size: 0.6rem;
+}
+
+/* --- Formulario y Roles --- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.perfil-selector-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs, 0.75rem);
+  align-items: center;
+}
+
+.section-label {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.role-badge-current {
+  color: var(--sena-verde, #39a900);
+  font-weight: 700;
+}
+
+.roles-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.role-option {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role-option:hover {
+  background-color: #f1f5f9;
+}
+
+.role-option.active {
+  background-color: #f0fdf4;
+  border-color: var(--sena-verde, #39a900);
+}
+
+.role-info h5 {
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.role-option.active .role-info h5 {
+  color: #166534;
+}
+
+.role-info p {
+  font-size: var(--text-xs, 0.75rem);
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+.check-icon {
+  color: var(--sena-verde, #39a900);
+  font-weight: bold;
+}
+
+/* --- Inputs --- */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs, 0.75rem);
+}
+
+.input-required {
+  color: var(--sena-verde, #39a900);
+  font-weight: 700;
+}
+
+.input-link {
+  color: #0284c7;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: var(--text-sm, 0.875rem);
+  color: #0f172a;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.styled-input:focus {
+  border-color: var(--sena-verde, #39a900);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(57, 169, 0, 0.15);
+}
+
+.input-help-text {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin: 2px 0 0 0;
+  line-height: 1.3;
+}
+
+/* Checkbox */
+.remember-checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.remember-checkbox-row input[type="checkbox"] {
+  accent-color: var(--sena-verde, #39a900);
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.checkbox-text h6 {
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.checkbox-text p {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+/* Botón Submit */
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-submit-login {
+  width: 100%;
+  height: 48px;
+  background-color: var(--sena-verde, #39a900);
+  color: #ffffff;
+  font-size: var(--text-base, 1rem);
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(57, 169, 0, 0.25);
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit-login:hover {
+  background-color: #2e8800;
+}
+
+.btn-caption {
+  font-size: 0.7rem;
+  color: #64748b;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Acceso Rápido Demo */
+.demo-access-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 16px;
+}
+
+.demo-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.demo-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.demo-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.demo-card:hover {
+  border-color: var(--sena-verde, #39a900);
+}
+
+.demo-icon {
+  font-size: 1.2rem;
+}
+
+.demo-card h6 {
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.demo-card p {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+/* Footer Legal */
+.login-legal-footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.legal-links {
+  display: flex;
+  gap: 12px;
+  font-size: var(--text-xs, 0.75rem);
+  color: #0284c7;
+  font-weight: 600;
+}
+
+.ley-1581-box {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.app-version-tag {
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   REGLAS RESPONSIVE (MEDIA QUERIES)
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  .login-card-wrapper {
+    max-width: 520px;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-page-container {
+    padding-top: 20px;
+  }
+
+  .login-header-banner {
+    border-radius: 20px 20px 0 0;
+    max-width: 560px;
+  }
+
+  .login-card-wrapper {
+    max-width: 560px;
+  }
+}

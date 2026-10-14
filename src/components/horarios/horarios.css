@@ -1,0 +1,595 @@
+
+
+.horario-page-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header Superior Fijo Web */
+.top-header-bar {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #00324d; /* Azul Institucional SENA */
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 50, 77, 0.15);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo-icon {
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #39a900; /* Verde SENA */
+}
+
+.brand-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.brand-subtitle {
+  font-size: 0.825rem;
+  opacity: 0.85;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-info-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-logout:hover {
+  opacity: 0.9;
+}
+
+/* Wrapper Contenido */
+.horario-content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Tarjeta Base */
+.card-panel {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+}
+
+/* Section Monitor arriba */
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.status-live-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #39a900;
+  border-radius: 50%;
+}
+
+.card-section-title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #475569;
+  letter-spacing: 0.5px;
+}
+
+.time-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748b;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.selectors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.selector-box {
+  background-color: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.selector-icon {
+  color: #64748b;
+}
+
+.green-icon {
+  color: #39a900;
+}
+
+.selector-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.selector-label {
+  font-size: 0.7rem;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.selector-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Dashboard Grid de 2 Columnas */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Columna Izquierda */
+.bloque-curso-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.bloque-header-bar {
+  background-color: #f1f5f9;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.badge-active-time {
+  background-color: #d9f99d;
+  color: #1a2e05;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #39a900;
+  border-radius: 50%;
+}
+
+.jornada-tag {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.bloque-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aula-detail h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.ficha-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-ficha {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.programa-name {
+  font-size: 0.85rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.instructor-card {
+  background-color: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.instructor-avatar-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+}
+
+.instructor-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.instructor-label {
+  font-size: 0.7rem;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.instructor-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.status-presente-tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #f0fdf4;
+  color: #16a34a;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.competencia-box p {
+  font-size: 0.85rem;
+  color: #334155;
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+.competencia-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.equipamiento-box {
+  background-color: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.equipamiento-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.equipamiento-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #475569;
+}
+
+.operativos-badge {
+  color: #39a900;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.equipos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.equipo-pill {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Columna Derecha */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.protocolo-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.protocolo-icon-box {
+  width: 42px;
+  height: 42px;
+  background-color: #0369a1;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #0369a1;
+}
+
+.protocolo-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.protocolo-question-box {
+  background-color: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 16px;
+}
+
+.question-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+  line-height: 1.35;
+}
+
+.help-text {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.protocolo-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-action {
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-action:hover {
+  opacity: 0.9;
+}
+
+.btn-conforme {
+  background-color: #39a900;
+}
+
+.btn-reportar {
+  background-color: #d32f2f;
+}
+
+.siguiente-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.siguiente-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #475569;
+}
+
+.badge-time {
+  background-color: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.siguiente-body {
+  background-color: #f8fafc;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siguiente-materia {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.siguiente-details {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+.status-espera-tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 600;
+}
+/* Selectores Interactivos */
+.interactive-select {
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.verificado-success-box {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.verificado-success-box h4 {
+  margin: 0;
+  color: #15803d;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.verificado-success-box p {
+  margin: 0;
+  color: #166534;
+  font-size: 0.8rem;
+}
+
+.btn-reset-verificacion {
+  margin-top: 6px;
+  background-color: #ffffff;
+  border: 1px solid #16a34a;
+  color: #15803d;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   REGLAS DESKTOP (PANTALLAS > 1024px)
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+  .selectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1.8fr 1.2fr; /* Columna principal izquierda amplia + panel derecho */
+    align-items: start;
+  }
+}

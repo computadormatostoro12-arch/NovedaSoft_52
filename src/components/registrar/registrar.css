@@ -1,0 +1,82 @@
+.registrar-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(240, 238, 238, 0.08);
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.registrar-header {
+  background-color: #00324D;
+  color: rgb(231, 226, 226);
+  padding: 22px 25px;
+  border-bottom: 4px solid #39A900;
+}
+
+.registrar-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color:#ffffff;
+}
+
+.registrar-header p {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #a2d2df;
+}
+
+.registrar-form {
+  padding: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #00324D;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd1d1;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #39A900;
+  box-shadow: 0 0 0 3px rgba(57, 169, 0, 0.15);
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: #39A900;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #319400;
+}
